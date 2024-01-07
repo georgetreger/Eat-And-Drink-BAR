@@ -475,7 +475,28 @@ aside{
            color: black;
           }
 
-         /*======================welcome menu start here=================*/
+    /*======================welcome menu start here=================*/
+
+  /*====================== banner start here=================*/
+   .banner-container{
+     background-color: var(--brandColor);
+     width: 100%;
+     height: 100%;
+     padding-top: 1rem;
+     padding-bottom: 2rem;
+   }
+
+   .banner-container .welcome-text h1{
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+   }
+
+   .banner-container .menu-con a{
+    white-space: nowrap;
+    margin-left: 1rem;
+   }
+    /*======================banner ends here=================*/
 
    /* =======================main ends here=================== */
        
