@@ -136,13 +136,14 @@
   }
    .input-search .form-container{
     margin-bottom: 2rem;
+     white-space: wrap;
     
    }
    .search-header .search-continer{
-    white-space: nowrap;
+       display: flex;
    }
      .news-container .input-search {
-         overflow: hidden;
+          overflow: hidden;
      }
       
  }
