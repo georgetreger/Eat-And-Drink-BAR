@@ -6,14 +6,52 @@ const cocktailContainer =document.querySelector('.cocktail-container')
  const submit = document.querySelector('.submit')
  const searchBox = document.querySelector('.searchBox')
  const randonContainer = document.querySelector('.cocktail-random')
+  
+ const searchEl = document.querySelector('.searchBox-2')
+  const submitBtn = document.querySelector('.submit-btn')
+  const showText = document.querySelector('.show-Text')
+  const bigImg = document.querySelector('.big-1')
+  const smallImg = document.getElementsByClassName('small-1')
 
 
+
+//   ====================footer element start here==========================
+      submitBtn.addEventListener('submit', (e)=>{
+            e.preventDefault();
+             
+          showText.innerHTML = 'thank you for contact us we will get back to you in 30 minutes'
+       const searchIput = searchEl.value.trim();
+            
+      })
+
+
+        
+
+      
+//   ====================footer element ends here==========================
 faStream.addEventListener('click', ()=>{
    asideEl.style.display ='block'
 })
 faClose.addEventListener('click', ()=>{
   asideEl.style.display ='none'
 })
+
+// ===========================Bar img changing start here=======================
+   smallImg[0].addEventListener('click', ()=>{
+      bigImg.src =smallImg[0].src
+   })
+   smallImg[1].addEventListener('click', ()=>{
+      bigImg.src =smallImg[1].src
+   })
+   smallImg[2].addEventListener('click', ()=>{
+      bigImg.src =smallImg[2].src
+   })
+   smallImg[3].addEventListener('click', ()=>{
+      bigImg.src =smallImg[3].src
+   })
+
+       
+// ===========================Bar img changing ends here=======================
 
 // ======================================cocktail start here====================
     const myCocktail = async (enqure) =>{
@@ -22,8 +60,7 @@ faClose.addEventListener('click', ()=>{
       const drink = await response.json()
       cocktailContainer.innerHTML =''
           drink.drinks.forEach(mydrink => {
-               console.log(drink);
-                
+      
                const myDiv = document.createElement('div')
                  myDiv.classList.add('cocktail');
                  myDiv.innerHTML =`
@@ -52,7 +89,6 @@ faClose.addEventListener('click', ()=>{
 // ======================================cocktail ends here====================
     const random = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=Champagne_flute')
     const randomData = await random.json();
-           console.log(randomData);
         randomData.drinks.forEach(randomdrink =>{
           const randomDiv = document.createElement('div')
               randomDiv.classList.add('random');
@@ -67,4 +103,5 @@ faClose.addEventListener('click', ()=>{
 
    myRandom();
 // ======================================random ends here====================
+
 

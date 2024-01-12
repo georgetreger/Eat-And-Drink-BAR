@@ -25,6 +25,21 @@
      margin-top: -40rem;
     } */
  } 
+
+ @media (max-width: 912px){
+    .wrap-all .app-container {
+            display: flex;
+            width: 90%;
+        }
+   .right  .loop {
+    background-color: #b0846c;
+     padding: 1rem;
+    width: 200px;
+    text-align: center;
+     
+    }
+    
+ }
  
 
  @media(max-width: 820px){
@@ -45,6 +60,10 @@
     /* .section1 .swiper{
      margin-top: -35rem;
     } */
+      /* .wrap-all  .app-container{
+            display: flex;
+         width: 90%;
+        } */
  }
 
  @media(max-width: 768px){
@@ -96,6 +115,17 @@
     .main-menu .box1{
         width: 400px;
     }
+  .app-container .phone-app .app-pic{
+    width: 200px;
+  }
+  .top-img img{
+    width: 50%;
+  }
+   .input-search .form-container{
+    margin-bottom: 2rem;
+    
+   }
+    
  }
 
  @media (max-width: 412px){
