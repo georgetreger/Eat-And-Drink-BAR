@@ -551,6 +551,69 @@ aside{
               cursor: pointer;
               opacity: .5;
              }
+             .country-container{
+               background: url('../images/cities.jpg');
+               width: 100%;
+               height: 100%;
+               background-position: center;
+               background-size: cover;
+               background-repeat: no-repeat;
+             }
+             .country-wrap{
+              width: 100%;
+              height: 100%;
+              background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7));
+              display: flex;
+              justify-content: center;
+               align-items: center;
+               flex-direction: column;
+
+               padding: 30px 30px 30px 30px;
+             }
+             .city-locate{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              margin-top: 2rem;
+             }
+              .locate h2{
+                color: #eee;
+              }
+
+             .city-1{
+              width: 300px;
+             }
+             .city-1  a{
+              margin-top: 2rem;
+              font-size: 1.3rem;
+               font-weight: 80;
+               transition: all 0.5s ease-in-out;
+             }
+
+             .city-1 a:hover{
+               opacity: .6;
+               text-decoration: underline;
+             }
+
+             .coppyright{
+              padding: 2rem;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              margin-top: 2rem;
+              border-top: 2px solid var(--brandColor);
+             }
+              .cop-text{
+                width: 70%;
+              }
+             .cop-text h5{
+              color: #eee;
+              font-style: italic;
+             }
         /*======================bar ends here=================*/
 
    /* =======================main ends here=================== */

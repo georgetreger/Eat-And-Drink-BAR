@@ -9,7 +9,9 @@
   
 
   @media(max-width: 2024px){
- 
+        /* .city-locate .city-1 {
+            width: 150px;
+          } */
    /* .aside-socials .right-2{
         display: block;
         margin-top: 1rem;
@@ -64,6 +66,14 @@
             display: flex;
          width: 90%;
         } */
+        .city-locate .city-1 {
+         width: 150px;
+        }
+      .input-search  .form-container{
+          white-space: nowrap;
+          margin-bottom: 2rem;
+        }
+       
  }
 
  @media(max-width: 768px){
@@ -88,6 +98,9 @@
     h3{
         width: 300px;
        }
+      .city-locate .city-1{
+        width: 150px;
+      }
  }
 
  @media (max-width: 576px){
@@ -128,7 +141,10 @@
    .search-header .search-continer{
     white-space: nowrap;
    }
-    
+     .news-container .input-search {
+         overflow: hidden;
+     }
+      
  }
 
  @media (max-width: 412px){
@@ -149,7 +165,9 @@
     /* .section1 .swiper{
      margin-top: -21rem;
     } */
-        
+      .news-container .input-search {
+      overflow: hidden;
+    }
  }
 
  @media (max-width: 360px){
@@ -160,6 +178,9 @@
         width: 350px;
         overflow: hidden;
     }
+     .news-container .input-search {
+       overflow: hidden;
+     }
  }
  @media (max-width: 375px){
    .welcome-menu{
@@ -169,6 +190,15 @@
         width: 350px;
         overflow: hidden;
     }
+    .news-container .input-search {
+     overflow: hidden;
+     }
+         .city-locate .city-1 {
+           width: 100px;
+         }
+.search-header .search-continer{
+    white-space: wrap;
+}
  }
  @media (max-width: 390px){
    .welcome-menu{
@@ -178,5 +208,9 @@
         width: 350px;
         overflow: hidden;
     }
+      .news-container .input-search {
+     overflow: hidden;
+    }
+    
  }
  
